@@ -28,7 +28,7 @@ def turn(board)
   until answer.between?(1,9)
     answer = get_answer()
   end
-  if valid_move?(board, answer
+  if valid_move?(board, answer)
     display_board(move(board, answer))
   end
 end
