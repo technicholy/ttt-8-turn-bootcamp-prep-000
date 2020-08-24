@@ -26,8 +26,8 @@ def turn(board)
     return input_to_index(pmove)
   end
   answer = get_answer()
-  until answer.between?(1,9)
-    answer = get_answer()
+  if !answer.between?(1,9)
+    answer = get_answer()    
   end
   if valid_move(board, answer)
     display_board(move(board, answer))
