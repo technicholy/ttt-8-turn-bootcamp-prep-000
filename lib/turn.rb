@@ -24,6 +24,7 @@ def turn(board)
     until answer.between?(1,9)
       puts "Please enter 1-9:"
       answer = gets.chomp
+    end
     return input_to_index(answer)
   end
   if valid_move?(board, answer)
