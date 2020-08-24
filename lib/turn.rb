@@ -32,5 +32,5 @@ def turn(board)
   else
     answer = get_answer
   end
-  
+
 end
