@@ -25,7 +25,7 @@ def turn(board)
     pmove = gets.chomp
     return input_to_index(pmove)
   end
-  while !(answer.between?(1,9))
+  until (answer.between?(1,9))
     answer = get_answer
   end
   if valid_move?(board, answer)
